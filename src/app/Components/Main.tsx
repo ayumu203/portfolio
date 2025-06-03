@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import MyInfo from '../Module/MyInfo';
 import MenuPanel from '../Module/MenuPanel';
 export default function Main() {
-    const [ pageMode, setPageMode ] = useState<boolean>(true);
+    const [ menuMode, setMenuMode ] = useState<boolean>(true);
+    const [ page, setPage ] = useState<string>("home");
 
     return (
         <div className="flex flex-grow">
@@ -18,10 +19,13 @@ export default function Main() {
                 />
             </div>
 
-            <div className="w-1/3 bg-green-700 p-6 md:p-10 flex flex-col justify-center items-start text-white">
-                {pageMode && <MyInfo mode={pageMode} setMode={setPageMode}/>}
-                {!pageMode && <MenuPanel mode={pageMode} setMode={setPageMode} />}
-            </div>
+
+            {page === "home" && <>            
+                <div className="w-1/3 bg-green-700 p-6 md:p-10 flex flex-col justify-center items-start text-white">
+                    {menuMode && <MyInfo mode={menuMode} setMode={setMenuMode}/>}
+                    {!menuMode && <MenuPanel mode={menuMode} setMode={setMenuMode} />}
+                </div>
+            </>}
         </div>
     );
 }

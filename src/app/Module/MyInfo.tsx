@@ -23,7 +23,7 @@ export default function MyInfo(prop: Prop) {
                 情報科学科
             </p>
             <p className="text-lg md:text-xl lg:text-2xl">
-                ARM203
+                HN:ARM203
             </p>
 
         </div>
