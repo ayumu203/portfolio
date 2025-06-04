@@ -1,14 +1,13 @@
 import React from 'react'
 
 type Prop = {
-    mode: boolean;
-    setMode: (mode: boolean) => void;
+    menuMode: boolean;
+    setMenuMode: (menuMode: boolean) => void;
 }
 
 export default function Hamburger(prop: Prop) {
-    const { mode, setMode } = prop;
     const toggleMenu = () => {
-        setMode(!mode);
+        prop.setMenuMode(!prop.menuMode);
     };
 
     return (

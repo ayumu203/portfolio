@@ -1,5 +1,8 @@
+import { Sawarabi_Gothic } from 'next/font/google';
 import React from 'react'
-import { zenKakuGothicNew } from '../layout'
+
+const sawarabi = Sawarabi_Gothic({ subsets: ['latin'], weight: '400', display: 'swap' });
+
 
 export default function PortalLogo() {
     return (
@@ -10,7 +13,7 @@ export default function PortalLogo() {
             flex flex-col
             items-center
             justify-center
-            ${zenKakuGothicNew.className}
+            ${sawarabi.className}
         `}
         >
             <a target='_blank' href="https://ayumu203.github.io/portal-shizuoka-vite/">静大生用</a>

@@ -1,5 +1,5 @@
+import { notable } from '@/app/layout'
 import React from 'react'
-import { notable } from '../layout'
 
 export default function PortfolioLogo() {
     return (

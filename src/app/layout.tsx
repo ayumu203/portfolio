@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Notable, Zen_Kaku_Gothic_New } from "next/font/google";
+import { Notable, Zen_Kaku_Gothic_New, Sawarabi_Mincho } from "next/font/google";
 
 
 export const notable = Notable({
@@ -14,6 +14,7 @@ export const zenKakuGothicNew = Zen_Kaku_Gothic_New({
     subsets: ["latin"],
     display: "swap"
 })
+
 
 export const metadata: Metadata = {
   title: "ポートフォリオ",

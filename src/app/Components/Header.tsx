@@ -1,7 +1,7 @@
 import React from 'react'
-import GithubLogo from '../Atom/GithubLogo'
-import PortalLogo from '../Atom/PortalLogo'
-import PortfolioLogo from '../Atom/PortfolioLogo'
+import PortfolioLogo from '../Atom/Logo/PortfolioLogo'
+import GithubLogo from '../Atom/Logo/GithubLogo'
+import PortalLogo from '../Atom/Logo/PortalLogo'
 
 export default function Header() {
     return (

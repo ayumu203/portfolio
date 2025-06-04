@@ -1,15 +1,14 @@
 "use client";
 import Image from 'next/image';
 import React, { useState } from 'react';
-import MyInfo from '../Module/MyInfo';
 import MenuPanel from '../Module/MenuPanel';
+import Welcome from '../Module/Welcome';
 export default function Main() {
     const [ menuMode, setMenuMode ] = useState<boolean>(true);
-    const [ page, setPage ] = useState<string>("home");
 
     return (
         <div className="flex flex-grow">
-            <div className="w-2/3 relative">
+            <div className="w-3/5 relative">
                 <Image
                     src="/ship.jpg"
                     alt="Ship deck view"
@@ -20,12 +19,12 @@ export default function Main() {
             </div>
 
 
-            {page === "home" && <>            
-                <div className="w-1/3 bg-green-700 p-6 md:p-10 flex flex-col justify-center items-start text-white">
-                    {menuMode && <MyInfo mode={menuMode} setMode={setMenuMode}/>}
-                    {!menuMode && <MenuPanel mode={menuMode} setMode={setMenuMode} />}
+            <>            
+                <div className="w-2/5 bg-green-700 p-6 md:p-10 flex flex-col justify-center items-start text-white">
+                    {menuMode && <Welcome menuMode={menuMode} setMenuMode={setMenuMode}/>}
+                    {!menuMode && <MenuPanel menuMode={menuMode} setMenuMode={setMenuMode}/>}
                 </div>
-            </>}
+            </>
         </div>
     );
 }
