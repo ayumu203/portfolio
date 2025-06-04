@@ -2,10 +2,7 @@ import React from 'react'
 import Homebutton from '../Atom/Button/Homebutton'
 import IntroductionTextItem from '../Atom/Item/IntroductionItem'
 
-type Prop = {
-}
-
-export default function MyIntroduction(prop: Prop) {
+export default function MyIntroduction() {
     
     return (
         <div>

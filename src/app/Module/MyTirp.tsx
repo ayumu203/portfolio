@@ -8,10 +8,7 @@ const shippori_Mincho = Shippori_Mincho_B1({
     display: 'swap'
 });
 
-type Prop = {
-};
-
-export default function MyTrip(prop: Prop) {
+export default function MyTrip() {
 
     return (
         <div>
