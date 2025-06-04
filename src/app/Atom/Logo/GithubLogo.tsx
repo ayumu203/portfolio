@@ -1,6 +1,12 @@
-import { notable } from '@/app/layout';
 import React from 'react'
 import { FaGithub } from 'react-icons/fa';
+import { Notable } from 'next/font/google'
+
+const notable = Notable({
+    subsets: ['latin'],
+    weight: ['400'],
+    display: 'swap',
+})
 
 export default function GithubLogo() {
     return (

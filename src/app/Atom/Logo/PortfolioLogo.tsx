@@ -1,5 +1,11 @@
-import { notable } from '@/app/layout'
+import { Notable } from 'next/font/google'
 import React from 'react'
+
+const notable = Notable({
+    subsets: ['latin'],
+    weight: ['400'],
+    display: 'swap',
+})
 
 export default function PortfolioLogo() {
     return (
