@@ -23,7 +23,7 @@ const IntroductionTextItem: React.FC<IntroductionTextItemProps> = ({
       </span>
       <span className={`${textClassName} mr-2`}>:</span>
       <span 
-        className={`flex-1 ${textClassName} whitespace-nowrap overflow-hidden text-ellipsis min-w-0`}
+        className={`flex-1 ${textClassName}  min-w-0`}
         title={value} 
       >
         {value}

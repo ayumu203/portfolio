@@ -1,6 +1,6 @@
 import React from 'react'
 import Hamburger from '../Atom/Button/HamburgerButton'
-import WelcomeText from '../Atom/WelcomeItem';
+import WelcomeText from '../Atom/Item/WelcomeItem';
 import { Edu_NSW_ACT_Foundation } from 'next/font/google';
 
 type Prop = {

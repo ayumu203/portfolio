@@ -6,7 +6,7 @@ import PortalLogo from '../Atom/Logo/PortalLogo'
 export default function Header() {
     return (
         <div className='
-            h-16 md:h-20
+            h-[10vh] md:h-20
             bg-green-800
             text-white
             flex justify-between items-center

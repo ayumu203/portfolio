@@ -1,7 +1,7 @@
 import React from 'react'
 import Hamburger from '../Atom/Button/HamburgerButton'
 import { useRouter } from 'next/navigation';
-import MenuItem from '../Atom/MenuItem';
+import MenuItem from '../Atom/Item/MenuItem';
 
 import { Zen_Kaku_Gothic_New, Sawarabi_Gothic, Noto_Sans_JP, Edu_NSW_ACT_Foundation } from 'next/font/google';
 
@@ -37,8 +37,21 @@ export default function MenuPanel(prop: Prop) {
                             router.push('/Introduction');
                         }}
                     />
-                    <MenuItem text="制作物" fontClass={sawarabi.className} />
-                    <MenuItem text="旅行" fontClass={noto.className} />
+                    <MenuItem 
+                        text="制作物" 
+                        fontClass={sawarabi.className} 
+                        onClick={() => {
+                            prop.setMenuMode(false);
+                        }}
+                    />
+                    <MenuItem 
+                        text="旅行" 
+                        fontClass={noto.className}
+                        onClick={() => {
+                            prop.setMenuMode(false);
+                            router.push('/Trip');
+                        }}    
+                    />
                     <MenuItem text="拉麺" fontClass={zen.className} />
                 </div>
             </div>

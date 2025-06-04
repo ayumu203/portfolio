@@ -13,7 +13,14 @@ export default function GithubLogo() {
                 justify-center
             `}>
             <a target='_blank' href="https://github.com/ayumu203">GitHub</a>
-            <FaGithub className='text-3xl' />
+            <a
+                href="https://github.com/ayumu203"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="GitHubプロフィールへ" 
+            >
+                <FaGithub className='text-3xl' />
+            </a>
         </div>
 
     )

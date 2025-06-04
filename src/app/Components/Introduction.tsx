@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React from 'react';
 import MyIntroduction from '../Module/MyIntroduction';
 export default function Introduction() {
 
@@ -22,8 +22,6 @@ export default function Introduction() {
                     <MyIntroduction />
                 </div>
             </>
-
-
         </div>
     );
 }

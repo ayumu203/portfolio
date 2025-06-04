@@ -1,6 +1,6 @@
 import React from 'react'
 import Homebutton from '../Atom/Button/Homebutton'
-import IntroductionTextItem from '../Atom/IntroductionItem'
+import IntroductionTextItem from '../Atom/Item/IntroductionItem'
 
 type Prop = {
 }
@@ -34,7 +34,7 @@ export default function MyIntroduction(prop: Prop) {
                 />
                 <IntroductionTextItem
                     label="趣味"
-                    value="鉄道旅行, Webアプリ開発"
+                    value="鉄道旅行, Webアプリ開発, Twitter(現X)"
                     textClassName="text-lg md:text-xl lg:text-2xl"
                 />
                 <IntroductionTextItem
