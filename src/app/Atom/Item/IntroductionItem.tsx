@@ -10,11 +10,11 @@ type IntroductionTextItemProps = {
 const IntroductionTextItem: React.FC<IntroductionTextItemProps> = ({
   label,
   value,
-  labelWidthClassName = "w-1/3 md:w-1/4 lg:w-1/5", 
-  textClassName = "text-xl md:text-2xl lg:text-3xl", 
+  labelWidthClassName = "w-1/10", 
+  textClassName = "text-3xl", 
 }) => {
   return (
-    <div className="flex items-baseline overflow-hidden"> 
+    <div className="flex items-baseline overflow-hidden mb-5"> 
       <span 
         className={`${labelWidthClassName} ${textClassName} font-semibold whitespace-nowrap mr-6 text-ellipsis`}
         title={label} 

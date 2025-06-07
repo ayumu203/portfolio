@@ -11,6 +11,19 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      "react/react-in-jsx-scope": "off", 
+      "jsx-a11y/alt-text": "warn", 
+      "jsx-a11y/anchor-is-valid": "warn", 
+      "no-console": ["warn", { allow: ["warn", "error"] }], 
+      "import/no-anonymous-default-export": "warn", 
+      "react/jsx-key": "error", 
+      "react/prop-types": "off", 
+      "@next/next/no-img-element": "error", 
+      "@next/next/no-html-link-for-pages": "off", 
+      },
+  },
 ];
 
 export default eslintConfig;

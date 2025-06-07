@@ -2,24 +2,45 @@
 import Image from 'next/image';
 import React from 'react';
 import MyIntroduction from '../Module/MyIntroduction';
+import Homebutton from '../Atom/Button/Homebutton';
 export default function Introduction() {
+
 
     return (
         <div className="flex flex-grow">
-            <div className="w-1/4 relative">
+            <div className="w-1/2 relative">
                 <Image
                     src="/me.jpg"
                     alt="me deck view"
                     layout="fill"
                     objectFit="cover"
                     quality={80}
-                    style={{ objectPosition: 'right center' }} 
+                    style={{ objectPosition: 'right center' }}
                 />
             </div>
 
-            <>            
-                <div className="w-3/4 bg-green-700 p-6 md:p-10 flex flex-col justify-center items-start text-white">
-                    <MyIntroduction />
+            <>
+                <div className="
+                    w-1/2 
+                    text-white
+                    relative
+                "
+                    style={{
+                        backgroundColor: "#061d33"
+                    }}>
+                    <div className='
+                        absolute
+                        top-5
+                        right-5
+                    '>
+                        <Homebutton />
+                    </div>
+
+                    <MyIntroduction className='
+                        absolute 
+                        top-10 
+                        left-5' 
+                    />
                 </div>
             </>
         </div>

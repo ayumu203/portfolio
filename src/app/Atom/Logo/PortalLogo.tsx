@@ -1,7 +1,7 @@
-import { Sawarabi_Gothic } from 'next/font/google';
+import { Oswald } from 'next/font/google'
 import React from 'react'
 
-const sawarabi = Sawarabi_Gothic({ subsets: ['latin'], weight: '400', display: 'swap' });
+const oswald = Oswald({ subsets: ['latin'], weight: ['400'], display: 'swap' })
 
 
 export default function PortalLogo() {
@@ -13,11 +13,11 @@ export default function PortalLogo() {
             flex flex-col
             items-center
             justify-center
-            ${sawarabi.className}
+            ${oswald.className}
         `}
         >
-            <a target='_blank' href="https://ayumu203.github.io/portal-shizuoka-vite/">静大生用</a>
-            <a target='_blank' href="https://ayumu203.github.io/portal-shizuoka-vite/">ポータルサイト</a>
+            <a target='_blank' href="https://ayumu203.github.io/portal-shizuoka-vite/">Shizudai</a>
+            <a target='_blank' href="https://ayumu203.github.io/portal-shizuoka-vite/">Pordal</a>
         </div>
 
     )

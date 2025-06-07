@@ -4,8 +4,14 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
+    <div className="
+      flex 
+      flex-col 
+      min-h-screen
+    ">
+      <Header bgColor="
+        bg-pink-500
+      "/>
       <Main />
     </div>
   );

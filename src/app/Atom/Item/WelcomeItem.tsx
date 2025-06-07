@@ -1,26 +1,33 @@
-import { Sawarabi_Mincho } from 'next/font/google'
-import React from 'react'
+'use client'
 
-const sawarabiGothic = Sawarabi_Mincho({
-    weight: "400",
-    subsets: ["latin"],
-    display: "swap"
-})
+import React from 'react';
 
+type Props = {
+    text: string;
+    fontClass?: string;
+    textSizeClass?: string;
+};
 
-export default function WelcomeText({text}: {text: string}) {
-  return (
-    <p className={` 
-      ${sawarabiGothic.className}
-      text-white 
-      text-base 
-      md:text-lg 
-      lg:text-lg
-      leading-relaxed 
-      tracking-wide p-3
-      mb-8
-      `}>
-        {text}
-    </p>
-  )
+export default function WelcomeText({ text, fontClass = '', textSizeClass = 'text-base' }: Props) {
+    // テキスト内の改行文字 `\n` を <br /> に変換する
+    const formatText = (inputText: string) => {
+        return inputText.split('\n').map((line, index) => (
+            <React.Fragment key={index}>
+                {line}
+                <br />
+            </React.Fragment>
+        ));
+    };
+
+    return (
+        <p className={` 
+            ${fontClass}
+            ${textSizeClass}
+            text-white 
+            leading-relaxed 
+            tracking-wide
+        `}>
+            {formatText(text)}
+        </p>
+    );
 }

@@ -1,20 +1,24 @@
-import React from 'react'
-import PortfolioLogo from '../Atom/Logo/PortfolioLogo'
-import GithubLogo from '../Atom/Logo/GithubLogo'
-import PortalLogo from '../Atom/Logo/PortalLogo'
+import React from 'react';
+import PortfolioLogo from '../Atom/Logo/PortfolioLogo';
+import GithubLogo from '../Atom/Logo/GithubLogo';
+import PortalLogo from '../Atom/Logo/PortalLogo';
 
-export default function Header() {
+type HeaderProps = {
+  bgColor?: string; 
+};
+
+export default function Header({ bgColor = 'bg-pink-500' }: HeaderProps) {
     return (
-        <div className='
+        <div className={`
             h-[10vh] md:h-20
-            bg-green-800
-            text-white
             flex justify-between items-center
             px-4 md:px-8
-        '>
+            ${bgColor}
+            text-white
+            `}>
             <PortfolioLogo />
             <GithubLogo />
             <PortalLogo />
         </div>
-    )
+    );
 }

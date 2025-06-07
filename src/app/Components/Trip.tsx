@@ -2,16 +2,19 @@
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import MyTrip from '../Module/MyTirp';
+import Homebutton from '../Atom/Button/Homebutton';
 
 export default function Trip() {
     const images = [
-        "/abasiri.jpg",
-        "/field.jpg",
-        "/hashi.jpg",
         "/makurazaki.jpg",
+        "/nakatugawa.jpg",
+        "/abasiri.jpg",
         "/pengin.jpg",
+        "/field.jpg",
+        "/kumamoto.jpg",
         "/misen.jpg",
-        "/kumamoto.jpg"
+        "/sakurajima.jpg",
+        "/gake.jpg",
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -21,7 +24,7 @@ export default function Trip() {
             setCurrentImageIndex((prevIndex) =>
                 (prevIndex + 1) % images.length
             );
-        }, 4000); 
+        }, 3000); 
 
         return () => clearInterval(timer); 
     }, [images.length]); 
@@ -47,11 +50,23 @@ export default function Trip() {
                 ))}
             </div>
             
-            <>              
-                <div className="w-1/2 bg-green-700 p-6 md:p-10 flex flex-col justify-center items-start text-white">
-                    <MyTrip />
+            <div className="
+                w-1/2 
+                bg-black 
+                relative
+                " 
+            style={{
+                backgroundColor: "#330016"
+            }}>
+                <div className='
+                    absolute 
+                    top-5 
+                    right-5'
+                >
+                    <Homebutton />
                 </div>
-            </>
+                <MyTrip />
+            </div>
         </div>
     );
 }

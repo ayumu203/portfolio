@@ -1,35 +1,60 @@
 import React from 'react'
 import Hamburger from '../Atom/Button/HamburgerButton'
 import WelcomeText from '../Atom/Item/WelcomeItem';
-import { Edu_NSW_ACT_Foundation } from 'next/font/google';
+
+import { Edu_NSW_ACT_Foundation, Sawarabi_Mincho } from 'next/font/google';
 
 type Prop = {
     menuMode: boolean;
     setMenuMode: (mode: boolean) => void;
 }
 
-const edu = Edu_NSW_ACT_Foundation({weight: "400", subsets: ["latin"], display: "swap" });
+// フォントの定義
+const edu = Edu_NSW_ACT_Foundation({ weight: "400", subsets: ["latin"], display: "swap" });
+const sawarabiMincho = Sawarabi_Mincho({ weight: "400", subsets: ["latin"], display: "swap" });
 
 export default function Welcome(prop: Prop) {
+    const welcomeMessages = [
+        "ARM203 と申します.",
+        "こちらは開発物や趣味等を紹介するサイトです.",
+        "このサイトは Next.js と Tailwind CSS を使用して作成しています.",
+        "右上のアイコンをクリックでメニューが開きます.",
+        "画像は太平洋フェリーからの夜景です.",
+        "このような写真や駄文を並べています.",
+        "暖かい目で見守ってください.",
+
+    ];
+
     return (
         <div>
-            <div className="absolute top-8 right-6 md:top-24 md:right-10">
-                <Hamburger menuMode={prop.menuMode} setMenuMode={prop.setMenuMode} />
-            </div> 
-
-            <div className='absolute top-45'>
-                <h3 className={`${edu.className} text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-14 ml-0`}>
-                    Portfogelio
+            <div className="absolute"> 
+                <h3 className={`
+                    ${edu.className} 
+                    text-6xl 
+                    mb-5`
+                }>
+                    Portfolio
                 </h3>
 
-                <div className="text-xl md:text-xl lg:text-xl space-y-2 md:space-y-3 ml-4">
-                    <WelcomeText text="開発物や趣味等を紹介するためのページです." />
-                <div className="text-xl md:text-xl lg:text-xl space-y-2 md:space-y-3">
-                    <WelcomeText text="上記のアイコンをクリックするとメニューが開きます." />
-                </div>
-                <div className="text-lg md:text-sm lg:text-sm space-y-2 md:space-y-3">
-                    <WelcomeText text="画像は北海道旅行の際に乗った太平洋フェリーの画像です." />
-                </div>
+                {/* 白線 */}
+                 <div className="
+                    w-full
+                    h-px 
+                    bg-white 
+                    mb-8
+                 "></div>
+
+                <div className="
+                    space-y-4
+                    ml-8
+                ">
+                    {welcomeMessages.map((text, index) => (
+                        <WelcomeText
+                            key={index}
+                            text={text}
+                            fontClass={sawarabiMincho.className} 
+                        />
+                    ))}
                 </div>
             </div>
         </div>
