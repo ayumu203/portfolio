@@ -6,15 +6,15 @@ import Homebutton from '../Atom/Button/Homebutton';
 
 export default function Trip() {
     const images = [
-        "/makurazaki.jpg",
-        "/nakatugawa.jpg",
-        "/abasiri.jpg",
-        "/pengin.jpg",
-        "/field.jpg",
-        "/kumamoto.jpg",
-        "/misen.jpg",
-        "/sakurajima.jpg",
-        "/gake.jpg",
+        "/trip/makurazaki.jpg",
+        "/trip/nakatugawa.jpg",
+        "/trip/abasiri.jpg",
+        "/trip/pengin.jpg",
+        "/trip/field.jpg",
+        "/trip/kumamoto.jpg",
+        "/trip/misen.jpg",
+        "/trip/sakurajima.jpg",
+        "/trip/gake.jpg",
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
