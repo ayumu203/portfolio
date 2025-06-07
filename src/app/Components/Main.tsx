@@ -51,7 +51,7 @@ export default function Main() {
                     absolute
                     top-10
                 ">
-                    {menuMode && <Welcome menuMode={menuMode} setMenuMode={setMenuMode} />}
+                    {menuMode && <Welcome/>}
                     {!menuMode && <MenuPanel />}
                 </div>
             </div>
