@@ -10,12 +10,9 @@ const sawarabiMincho = Sawarabi_Mincho({ weight: "400", subsets: ["latin"], disp
 export default function Welcome() {
     const welcomeMessages = [
         "ARM203 と申します.",
-        "こちらは開発物や趣味等を紹介するサイトです.",
-        "このサイトは Next.js と Tailwind CSS を使用して作成しています.",
+        "こちらは開発物や趣味等を紹介するサイトです.このサイトは Next.js と Tailwind CSS を使用して作成しています.",
         "右上のアイコンをクリックでメニューが開きます.",
-        "画像は太平洋フェリーからの夜景です.",
-        "このような写真や駄文を並べています.",
-        "暖かい目で見守ってください.",
+        "画像は太平洋フェリーからの夜景です.このような写真や駄文を並べています.暖かい目で見守ってください.",
 
     ];
 

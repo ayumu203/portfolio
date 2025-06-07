@@ -24,10 +24,12 @@ export default function Introduction() {
                     w-1/2 
                     text-white
                     relative
+                    bg-slate-900
                 "
-                    style={{
-                        backgroundColor: "#061d33"
-                    }}>
+                    // style={{
+                    //     backgroundColor: "#061d33"
+                    // }}
+                    >
                     <div className='
                         absolute
                         top-5

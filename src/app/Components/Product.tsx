@@ -68,6 +68,7 @@ export default function Product() {
                                 バージョン1として,Google 認証,初期ポケモンの選択, ポケモン情報の参照, ポケモンバトルの処理を実装しました.
                                 現在はバージョン2としてフロントエンドを Vercel,バックエンドを　Google Cloud Run にデプロイを行ってアクセスを容易にするように実装を行いました.
                                 現在はポケモンバトル部分をまだ移植中です.
+                                GitHubのリポジトリはこちらから : https://github.com/ayumu203/poke-clone-v2 
                             '
                             url='https://poke-clone-v2.vercel.app/'
                         />
@@ -99,6 +100,7 @@ export default function Product() {
                                 大学の授業開始時間等をまとめた時間割表の表示.
                                 基本的な機能を実装したtodoリスト.
                                 上記のような機能を実装しています.
+                                GitHubのリポジトリはこちらから : https://github.com/ayumu203/portal-shizuoka-vite
                             '
                             url='https://ayumu203.github.io/portal-shizuoka-vite/'
                         />

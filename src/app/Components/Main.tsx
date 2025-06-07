@@ -27,7 +27,7 @@ export default function Main() {
 
             <div className="
                 w-2/5 
-                bg-black 
+                bg-slate-700
                 p-6 md:p-10 
                 flex flex-col 
                 justify-center 
@@ -35,9 +35,9 @@ export default function Main() {
                 text-white
                 relative
                 "
-                style={{
-                    backgroundColor: "#33041d"
-                }}
+                // style={{
+                //     backgroundColor: "#4d062c"
+                // }}
             >
                 <div className="
                     absolute
@@ -50,6 +50,7 @@ export default function Main() {
                     w-80/100
                     absolute
                     top-10
+                    text-slate-200
                 ">
                     {menuMode && <Welcome/>}
                     {!menuMode && <MenuPanel />}

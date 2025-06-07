@@ -23,7 +23,9 @@ export default function WelcomeText({ text, fontClass = '', textSizeClass = 'tex
         <p className={` 
             ${fontClass}
             ${textSizeClass}
-            text-white 
+            text-white
+            font-bold
+            text-lg
             leading-relaxed 
             tracking-wide
         `}>

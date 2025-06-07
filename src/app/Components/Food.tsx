@@ -12,7 +12,10 @@ export default function Food() {
         "/mesi/beer.jpg",
         "/mesi/hukuyama.jpg",
         "/mesi/natural.jpg",
-        "/mesi/soup.jpg"
+        "/mesi/soup.jpg",
+        "/mesi/katuo.jpg",
+        "/mesi/sushi.jpg",
+        "/mesi/tan.jpg"
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -38,7 +41,7 @@ export default function Food() {
                         layout="fill"
                         objectFit="cover"
                         quality={80}
-                        style={{ objectPosition: 'right center' }}
+                        // style={{ objectPosition: 'right center' }}
                         className={`
                             absolute inset-0
                             transition-opacity duration-1000 ease-in-out
@@ -50,7 +53,7 @@ export default function Food() {
             
             <div className="
                 w-1/2 
-                bg-sky-300 
+                bg-orange-50 
                 relative
                 ">
                 <div className='
@@ -58,7 +61,7 @@ export default function Food() {
                     top-5 
                     right-5'
                 >
-                    <Homebutton />
+                    <Homebutton color='text-amber-800 focus:ring-amber-800' />
 
                 </div>
                 <MyFood />

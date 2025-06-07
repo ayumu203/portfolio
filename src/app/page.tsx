@@ -10,7 +10,7 @@ export default function Home() {
       min-h-screen
     ">
       <Header bgColor="
-        bg-pink-500
+        bg-rose-400
       "/>
       <Main />
     </div>
