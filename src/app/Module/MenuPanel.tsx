@@ -43,6 +43,7 @@ export default function MenuPanel() {
                         text="Product" 
                         fontClass={edu.className} 
                         onClick={() => {
+                            router.push('/Product');
                         }}
                     />
                     <MenuItem 
@@ -52,7 +53,13 @@ export default function MenuPanel() {
                             router.push('/Trip');
                         }}    
                     />
-                    <MenuItem text="Food" fontClass={edu.className} />
+                    <MenuItem 
+                        text="Food" 
+                        fontClass={edu.className}
+                        onClick={() => {
+                            router.push('/Food');
+                        }}  
+                    />
                 </div>
             </div>
         </div>

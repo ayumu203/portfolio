@@ -31,7 +31,7 @@ const introductionData = [
     },
     {
         label: "顔写真",
-        value: "意外といい写真がなかった(これ含め)",
+        value: "意外と一人で写ってる写真がないものですね....",
         textClassName: "text-xl",
     },
 ];

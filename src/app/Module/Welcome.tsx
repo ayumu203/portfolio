@@ -1,19 +1,13 @@
 import React from 'react'
-import Hamburger from '../Atom/Button/HamburgerButton'
 import WelcomeText from '../Atom/Item/WelcomeItem';
 
 import { Edu_NSW_ACT_Foundation, Sawarabi_Mincho } from 'next/font/google';
-
-type Prop = {
-    menuMode: boolean;
-    setMenuMode: (mode: boolean) => void;
-}
 
 // フォントの定義
 const edu = Edu_NSW_ACT_Foundation({ weight: "400", subsets: ["latin"], display: "swap" });
 const sawarabiMincho = Sawarabi_Mincho({ weight: "400", subsets: ["latin"], display: "swap" });
 
-export default function Welcome(prop: Prop) {
+export default function Welcome() {
     const welcomeMessages = [
         "ARM203 と申します.",
         "こちらは開発物や趣味等を紹介するサイトです.",
