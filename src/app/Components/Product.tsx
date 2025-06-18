@@ -70,7 +70,7 @@ export default function Product() {
                                 現在はポケモンバトル部分をまだ移植中です.
                                 GitHubのリポジトリはこちらから : https://github.com/ayumu203/poke-clone-v2 
                             '
-                            url='https://poke-clone-v2.vercel.app/'
+                            url='https://github.com/ayumu203/poke-clone-v2'
                         />
                         <p
                             className="
