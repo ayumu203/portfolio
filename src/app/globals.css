@@ -10,6 +10,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* デフォルトのマージンをリセット */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* タッチデバイスでの最適化 */
 @media (hover: none) and (pointer: coarse) {
   /* タッチデバイスでのボタンの最小タップ領域 */

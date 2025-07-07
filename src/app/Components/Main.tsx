@@ -15,7 +15,7 @@ export default function Main() {
         ">
             {/* 画像部分 - モバイルでは上部に表示、デスクトップでは左側 */}
             <div className="
-                w-full md:w-3/5 
+                w-full md:w-1/2 
                 h-64 md:h-auto
                 relative
             ">
@@ -31,15 +31,17 @@ export default function Main() {
 
             {/* コンテンツ部分 - モバイルでは下部に表示、デスクトップでは右側 */}
             <div className="
-                w-full md:w-2/5 
+                w-full md:w-1/2 
                 bg-slate-700
-                p-4 sm:p-6 md:p-10 
+                pt-2 sm:pt-3 md:pt-10
+                pb-4 sm:pb-6 md:pb-10
+                px-4 sm:px-6 md:px-10 
                 flex flex-col 
-                justify-center 
+                justify-start md:justify-center
                 items-start 
                 text-white
                 relative
-                min-h-96 md:min-h-0
+                min-h-screen md:min-h-0
             ">
                 <div className="
                     absolute
@@ -50,7 +52,7 @@ export default function Main() {
                 </div>
                 <div className="
                     w-full
-                    pt-12 sm:pt-10
+                    mt-12 sm:mt-14 md:mt-16 pt-2
                     text-slate-200
                 ">
                     {menuMode && <Welcome/>}

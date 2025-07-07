@@ -26,7 +26,7 @@ export default function Introduction() {
                 text-white
                 relative
                 bg-slate-900
-                min-h-96 md:min-h-0
+                min-h-screen md:min-h-0
                 p-4 sm:p-6 md:p-0
             ">
                 <div className='
