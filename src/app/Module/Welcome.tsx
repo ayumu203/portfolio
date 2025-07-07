@@ -23,7 +23,7 @@ export default function Welcome() {
                     ${edu.className} 
                     text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
                     mb-0.5 sm:mb-1 md:mb-1
-                    mt-2`
+                    mt-3 sm:mt-5 md:mt-3 lg:mt-3`
                 }>
                     Portfolio
                 </h3>

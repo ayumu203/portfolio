@@ -33,11 +33,11 @@ export default function Main() {
             <div className="
                 w-full md:w-1/2 
                 bg-slate-700
-                pt-2 sm:pt-3 md:pt-10
+                pt-6 sm:pt-8 md:pt-[5vh]
                 pb-4 sm:pb-6 md:pb-10
                 px-4 sm:px-6 md:px-10 
                 flex flex-col 
-                justify-start md:justify-center
+                justify-start
                 items-start 
                 text-white
                 relative
@@ -45,14 +45,14 @@ export default function Main() {
             ">
                 <div className="
                     absolute
-                    top-3 sm:top-5
+                    top-6 sm:top-8 md:top-[5vh]
                     right-3 sm:right-5
                 ">
                     <Hamburger menuMode={menuMode} setMenuMode={setMenuMode} />
                 </div>
                 <div className="
                     w-full
-                    mt-12 sm:mt-14 md:mt-16 pt-2
+                    mt-0 pt-0
                     text-slate-200
                 ">
                     {menuMode && <Welcome/>}
