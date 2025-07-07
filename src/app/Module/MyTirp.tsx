@@ -24,14 +24,14 @@ export default function MyTrip() {
                     ${shippori_Mincho.className}
                     w-full max-w-2xl
                     text-gray-200
-                    text-xl
+                    text-sm sm:text-base md:text-lg lg:text-xl
                     space-y-4
                     absolute 
                     top-10 
                     left-5
                 `}
         >
-            <p className="text-6xl font-semibold mb-10">旅行</p>
+            <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 sm:mb-8 md:mb-10">旅行</p>
 
             {/* 白線 */}
             <div className="

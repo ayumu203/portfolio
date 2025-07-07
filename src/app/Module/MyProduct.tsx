@@ -105,7 +105,7 @@ export default function MyProduct({ title, description, imagePaths, url }: MyPro
           {/* 説明文 */}
           <div className="lg:block">
             <p className="
-              text-sm sm:text-base md:text-lg 
+              text-xs sm:text-sm md:text-base lg:text-lg
               text-neutral-200 
               leading-relaxed 
               whitespace-pre-line
