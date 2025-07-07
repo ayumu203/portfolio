@@ -5,10 +5,9 @@ import React from 'react';
 type Props = {
     text: string;
     fontClass?: string;
-    textSizeClass?: string;
 };
 
-export default function WelcomeText({ text, fontClass = '', textSizeClass = 'text-base' }: Props) {
+export default function WelcomeText({ text, fontClass = '' }: Props) {
     // テキスト内の改行文字 `\n` を <br /> に変換する
     const formatText = (inputText: string) => {
         return inputText.split('\n').map((line, index) => (
