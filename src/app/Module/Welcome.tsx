@@ -17,12 +17,13 @@ export default function Welcome() {
     ];
 
     return (
-        <div>
-            <div className="absolute"> 
+        <div className="w-full mt-0 pt-0">
+            <div className="mt-0 pt-0"> 
                 <h3 className={`
                     ${edu.className} 
-                    text-6xl 
-                    mb-5`
+                    text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
+                    mb-0.5 sm:mb-1 md:mb-1
+                    mt-2`
                 }>
                     Portfolio
                 </h3>
@@ -32,12 +33,12 @@ export default function Welcome() {
                     w-full
                     h-px 
                     bg-white 
-                    mb-8
+                    mb-1 sm:mb-2 md:mb-2
                  "></div>
 
                 <div className="
-                    space-y-4
-                    ml-8
+                    space-y-3 sm:space-y-4 md:space-y-4
+                    ml-4 sm:ml-6 md:ml-8
                 ">
                     {welcomeMessages.map((text, index) => (
                         <WelcomeText

@@ -22,12 +22,12 @@ export default function WelcomeText({ text, fontClass = '', textSizeClass = 'tex
     return (
         <p className={` 
             ${fontClass}
-            ${textSizeClass}
             text-white
             font-bold
-            text-lg
+            text-sm sm:text-base md:text-lg
             leading-relaxed 
             tracking-wide
+            break-words
         `}>
             {formatText(text)}
         </p>

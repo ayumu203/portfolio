@@ -10,12 +10,13 @@ export default function MenuPanel() {
     const router = useRouter();
 
     return (
-        <div>
-            <div className="">
+        <div className="w-full mt-0 pt-0">
+            <div className="mt-0 pt-0">
                 <p className={`
                     ${edu.className} 
-                    text-6xl
-                    mb-5
+                    text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+                    mb-0.5 sm:mb-1 md:mb-1
+                    mt-2
                 `}>
                     Contents
                 </p>
@@ -25,12 +26,13 @@ export default function MenuPanel() {
                     w-full
                     h-px 
                     bg-white 
-                    mb-8
+                    mb-1 sm:mb-2 md:mb-2
                  "></div>
 
 
                 <div className="
-                    ml-8
+                    ml-4 sm:ml-6 md:ml-8
+                    space-y-2 sm:space-y-3 md:space-y-4
                 ">
                     <MenuItem
                         text="Self Introduction"

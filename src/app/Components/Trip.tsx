@@ -30,42 +30,50 @@ export default function Trip() {
     }, [images.length]); 
 
     return (
-        <div className="flex flex-grow h-screen"> 
-            <div className="w-1/2 relative">
+        <div className="flex flex-col md:flex-row flex-grow min-h-screen"> 
+            {/* 画像スライダー部分 */}
+            <div className="w-full md:w-1/2 h-64 md:h-auto relative">
                 {images.map((src, index) => (
                     <Image
                         key={src} 
                         src={src}
                         alt={`Slide ${index + 1}`} 
-                        layout="fill"
-                        objectFit="cover"
-                        quality={80}
-                        style={{ objectPosition: 'right center' }}
+                        fill
                         className={`
+                            object-cover
                             absolute inset-0
                             transition-opacity duration-1000 ease-in-out
                             ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}
                         `}
+                        quality={80}
+                        style={{ objectPosition: 'center' }}
+                        priority={index === 0}
                     />
                 ))}
             </div>
             
+            {/* コンテンツ部分 */}
             <div className="
-                w-1/2 
+                w-full md:w-1/2 
                 bg-black 
                 relative
+                p-4 sm:p-6 md:p-0
+                min-h-screen md:min-h-0
                 " 
-            style={{
-                backgroundColor: "#330016"
-            }}>
+                style={{
+                    backgroundColor: "#330016"
+                }}
+            >
                 <div className='
                     absolute 
-                    top-5 
-                    right-5'
+                    top-3 sm:top-5
+                    right-3 sm:right-5'
                 >
                     <Homebutton />
                 </div>
-                <MyTrip />
+                <div className="pt-16 sm:pt-14 md:pt-12 lg:pt-16">
+                    <MyTrip />
+                </div>
             </div>
         </div>
     );

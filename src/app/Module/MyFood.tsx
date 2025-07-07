@@ -15,16 +15,14 @@ export default function MyFood() {
         <div
             className={`
                     ${shippori_Mincho.className}
-                    w-full max-w-2xl
+                    w-full
                     text-stone-700
-                    text-xl
+                    text-sm sm:text-base md:text-lg lg:text-xl
                     space-y-4
-                    absolute 
-                    top-10 
-                    left-5
+                    p-4 sm:p-6 md:p-8 lg:p-10
                 `}
         >
-            <p className="text-6xl font-semibold mb-10">食事</p>
+            <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 sm:mb-8 md:mb-10">食事</p>
 
             {/* 白線 */}
             <div className="
@@ -33,7 +31,7 @@ export default function MyFood() {
                     mb-10
                  "></div>
 
-
+                <div className="space-y-4 sm:space-y-5 md:space-y-6">
                  <TripItem text="私の生きる理由の５０％くらいは食事だと思います." />
                  <TripItem text="家での食事はもちろん外食や旅行先での食事は大きな楽しみです." />
                  <TripItem text="好きなものは脂っこいもの・炭水化物です." />
@@ -42,6 +40,7 @@ export default function MyFood() {
                  <TripItem text="北海道は食事のレベルが異常に高いと感じました." />
                  <TripItem text="浜松のラーメンだと一凛, ライオン, いっとく, 麺's natural, +N, ラーメン以外だと, からやま・香龍(近所の町中華) あたりが美味しいと思いました." />
                  <TripItem text="(こいつラーメンばっか紹介してんな....)" />
+                </div>
 
         </div>
     );

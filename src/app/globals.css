@@ -1,2 +1,39 @@
 @import "tailwindcss";
 
+/* レスポンシブ対応のための基本スタイル */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* デフォルトのマージンをリセット */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* タッチデバイスでの最適化 */
+@media (hover: none) and (pointer: coarse) {
+  /* タッチデバイスでのボタンの最小タップ領域 */
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* 小さな画面での調整 */
+@media (max-width: 640px) {
+  /* スクロールバーを非表示にして、スペースを節約 */
+  body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+}

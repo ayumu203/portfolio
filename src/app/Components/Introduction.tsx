@@ -5,46 +5,44 @@ import MyIntroduction from '../Module/MyIntroduction';
 import Homebutton from '../Atom/Button/Homebutton';
 export default function Introduction() {
 
-
     return (
-        <div className="flex flex-grow">
-            <div className="w-1/2 relative">
+        <div className="flex flex-col md:flex-row flex-grow">
+            {/* 画像部分 */}
+            <div className="w-full md:w-1/2 h-64 md:h-auto relative">
                 <Image
                     src="/me.jpg"
                     alt="me deck view"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    className="object-cover"
                     quality={80}
                     style={{ objectPosition: 'right center' }}
+                    priority
                 />
             </div>
 
-            <>
-                <div className="
-                    w-1/2 
-                    text-white
-                    relative
-                    bg-slate-900
-                "
-                    // style={{
-                    //     backgroundColor: "#061d33"
-                    // }}
-                    >
-                    <div className='
-                        absolute
-                        top-5
-                        right-5
-                    '>
-                        <Homebutton />
-                    </div>
-
-                    <MyIntroduction className='
-                        absolute 
-                        top-10 
-                        left-5' 
-                    />
+            {/* コンテンツ部分 */}
+            <div className="
+                w-full md:w-1/2 
+                text-white
+                relative
+                bg-slate-900
+                min-h-screen md:min-h-0
+                p-4 sm:p-6 md:p-0
+            ">
+                <div className='
+                    absolute
+                    top-3 sm:top-5
+                    right-3 sm:right-5
+                '>
+                    <Homebutton />
                 </div>
-            </>
+
+                <MyIntroduction className='
+                    pt-16 sm:pt-14 md:pt-12 lg:pt-16
+                    w-full
+                    px-4 sm:px-6 md:px-8 lg:px-10
+                ' />
+            </div>
         </div>
     );
 }
