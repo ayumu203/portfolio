@@ -10,46 +10,47 @@ export default function Main() {
     return (
         <div className="
             flex 
+            flex-col md:flex-row
             flex-grow
         ">
+            {/* 画像部分 - モバイルでは上部に表示、デスクトップでは左側 */}
             <div className="
-                w-3/5 
+                w-full md:w-3/5 
+                h-64 md:h-auto
                 relative
             ">
                 <Image
                     src="/ship.jpg"
                     alt="Ship deck view"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    className="object-cover"
                     quality={80}
+                    priority
                 />
             </div>
 
+            {/* コンテンツ部分 - モバイルでは下部に表示、デスクトップでは右側 */}
             <div className="
-                w-2/5 
+                w-full md:w-2/5 
                 bg-slate-700
-                p-6 md:p-10 
+                p-4 sm:p-6 md:p-10 
                 flex flex-col 
                 justify-center 
                 items-start 
                 text-white
                 relative
-                "
-                // style={{
-                //     backgroundColor: "#4d062c"
-                // }}
-            >
+                min-h-96 md:min-h-0
+            ">
                 <div className="
                     absolute
-                    top-5
-                    right-5
+                    top-3 sm:top-5
+                    right-3 sm:right-5
                 ">
                     <Hamburger menuMode={menuMode} setMenuMode={setMenuMode} />
                 </div>
                 <div className="
-                    w-80/100
-                    absolute
-                    top-10
+                    w-full
+                    pt-12 sm:pt-10
                     text-slate-200
                 ">
                     {menuMode && <Welcome/>}

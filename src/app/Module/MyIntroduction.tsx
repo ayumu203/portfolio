@@ -40,9 +40,9 @@ export default function MyIntroduction({ className = "" }: { className?: string 
     return (
         <div className={className}>
             <p className="
-                text-6xl 
+                text-3xl sm:text-4xl md:text-5xl lg:text-6xl
                 font-semibold 
-                mb-10">
+                mb-6 sm:mb-8 md:mb-10">
                 自己紹介
             </p>
 
@@ -51,18 +51,19 @@ export default function MyIntroduction({ className = "" }: { className?: string 
                     w-full
                     h-px 
                     bg-white 
-                    mb-8
+                    mb-4 sm:mb-6 md:mb-8
                  "></div>
 
-
-            {introductionData.map((item) => (
-                <IntroductionTextItem
-                    key={item.label}
-                    label={item.label}
-                    value={item.value}
-                    textClassName={item.textClassName}
-                />
-            ))}
+            <div className="space-y-4 sm:space-y-6">
+                {introductionData.map((item) => (
+                    <IntroductionTextItem
+                        key={item.label}
+                        label={item.label}
+                        value={item.value}
+                        textClassName={item.textClassName}
+                    />
+                ))}
+            </div>
         </div>
     )
 }

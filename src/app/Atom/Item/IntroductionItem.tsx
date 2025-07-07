@@ -14,16 +14,30 @@ const IntroductionTextItem: React.FC<IntroductionTextItemProps> = ({
   textClassName = "text-3xl", 
 }) => {
   return (
-    <div className="flex items-baseline overflow-hidden mb-5"> 
+    <div className="flex flex-col sm:flex-row sm:items-baseline overflow-hidden"> 
       <span 
-        className={`${labelWidthClassName} ${textClassName} font-semibold whitespace-nowrap mr-6 text-ellipsis`}
+        className={`
+          ${labelWidthClassName} 
+          font-semibold 
+          whitespace-nowrap 
+          mr-0 sm:mr-6 
+          mb-1 sm:mb-0
+          text-sm sm:text-base md:text-lg lg:text-xl
+          text-blue-300
+        `}
         title={label} 
       >
         {label}
       </span>
-      <span className={`${textClassName} mr-2`}>:</span>
+      <span className={`hidden sm:inline text-sm sm:text-base md:text-lg lg:text-xl mr-2`}>:</span>
       <span 
-        className={`flex-1 ${textClassName}  min-w-0`}
+        className={`
+          flex-1 
+          min-w-0
+          text-sm sm:text-base md:text-lg lg:text-xl
+          break-words
+          leading-relaxed
+        `}
         title={value} 
       >
         {value}
