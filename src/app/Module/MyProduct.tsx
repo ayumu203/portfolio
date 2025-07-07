@@ -110,8 +110,9 @@ export default function MyProduct({ title, description, imagePaths, url }: MyPro
               leading-relaxed 
               whitespace-pre-line
               text-left
+              space-y-2 sm:space-y-3 md:space-y-4
             " 
-            style={{ textIndent: "1em" }}>
+            style={{ textIndent: "1em", lineHeight: "1.8" }}>
               {description}
             </p>
           </div>

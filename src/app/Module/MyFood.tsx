@@ -33,7 +33,7 @@ export default function MyFood() {
                     mb-10
                  "></div>
 
-
+                <div className="space-y-4 sm:space-y-5 md:space-y-6">
                  <TripItem text="私の生きる理由の５０％くらいは食事だと思います." />
                  <TripItem text="家での食事はもちろん外食や旅行先での食事は大きな楽しみです." />
                  <TripItem text="好きなものは脂っこいもの・炭水化物です." />
@@ -42,6 +42,7 @@ export default function MyFood() {
                  <TripItem text="北海道は食事のレベルが異常に高いと感じました." />
                  <TripItem text="浜松のラーメンだと一凛, ライオン, いっとく, 麺's natural, +N, ラーメン以外だと, からやま・香龍(近所の町中華) あたりが美味しいと思いました." />
                  <TripItem text="(こいつラーメンばっか紹介してんな....)" />
+                </div>
 
         </div>
     );

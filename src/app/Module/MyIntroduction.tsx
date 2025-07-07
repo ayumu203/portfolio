@@ -54,7 +54,7 @@ export default function MyIntroduction({ className = "" }: { className?: string 
                     mb-4 sm:mb-6 md:mb-8
                  "></div>
 
-            <div className="space-y-4 sm:space-y-6">
+            <div className="space-y-6 sm:space-y-7 md:space-y-8">
                 {introductionData.map((item) => (
                     <IntroductionTextItem
                         key={item.label}

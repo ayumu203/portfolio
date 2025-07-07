@@ -38,6 +38,7 @@ const IntroductionTextItem: React.FC<IntroductionTextItemProps> = ({
           break-words
           leading-relaxed
         `}
+        style={{ lineHeight: "1.7" }}
         title={value} 
       >
         {value}

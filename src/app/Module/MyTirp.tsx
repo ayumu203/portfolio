@@ -41,7 +41,7 @@ export default function MyTrip() {
                     mb-10
                  "></div>
 
-                <div className='space-y-4'>
+                <div className='space-y-4 sm:space-y-5 md:space-y-6'>
                     {text.split('\n').map((sentence, index) => (
                         sentence.trim() && (
                             <TripItem key={index} text={sentence.trim() + '\n'} />
