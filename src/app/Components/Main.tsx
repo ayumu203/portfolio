@@ -53,7 +53,7 @@ export default function Main() {
                 <div className="
                     w-full
                     mt-0 pt-0
-                    text-slate-200
+                    text-slate2４00
                 ">
                     {menuMode && <Welcome/>}
                     {!menuMode && <MenuPanel />}

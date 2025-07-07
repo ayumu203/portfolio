@@ -27,20 +27,24 @@ export default function Introduction() {
                 relative
                 bg-slate-900
                 min-h-screen md:min-h-0
-                p-4 sm:p-6 md:p-0
+                pt-6 sm:pt-8 md:pt-[5vh]
+                pb-4 sm:pb-6 md:pb-10
+                px-4 sm:px-6 md:px-10
+                flex flex-col
+                justify-start
+                items-start
             ">
                 <div className='
                     absolute
-                    top-3 sm:top-5
+                    top-6 sm:top-8 md:top-[5vh]
                     right-3 sm:right-5
                 '>
                     <Homebutton />
                 </div>
 
                 <MyIntroduction className='
-                    pt-16 sm:pt-14 md:pt-12 lg:pt-16
+                    pt-0
                     w-full
-                    px-4 sm:px-6 md:px-8 lg:px-10
                 ' />
             </div>
         </div>

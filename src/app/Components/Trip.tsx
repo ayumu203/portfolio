@@ -58,6 +58,9 @@ export default function Trip() {
                 bg-black 
                 relative
                 p-4 sm:p-6 md:p-0
+                flex flex-col
+                justify-start
+                items-start
                 min-h-screen md:min-h-0
                 " 
                 style={{
@@ -71,7 +74,7 @@ export default function Trip() {
                 >
                     <Homebutton />
                 </div>
-                <div className="pt-16 sm:pt-14 md:pt-12 lg:pt-16">
+                <div className="pt-0">
                     <MyTrip />
                 </div>
             </div>

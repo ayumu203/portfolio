@@ -16,19 +16,21 @@ export default function MyFood() {
             className={`
                     ${shippori_Mincho.className}
                     w-full
-                    text-stone-700
+                    text-white
                     text-sm sm:text-base md:text-lg lg:text-xl
                     space-y-4
                     p-4 sm:p-6 md:p-8 lg:p-10
                 `}
         >
-            <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 sm:mb-8 md:mb-10">食事</p>
+            <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 sm:mb-8 md:mb-10 text-white">食事</p>
 
-            {/* 白線 */}
+            {/* 緑線 */}
             <div className="
                     w-full
-                    h-px 
+                    h-[3px]
+                    bg-green-700
                     mb-10
+                    mt-[3px]
                  "></div>
 
                 <div className="space-y-4 sm:space-y-5 md:space-y-6">

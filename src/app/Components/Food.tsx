@@ -55,9 +55,12 @@ export default function Food() {
             {/* コンテンツ部分 */}
             <div className="
                 w-full md:w-1/2 
-                bg-orange-50 
+                bg-slate-700
                 relative
                 p-4 sm:p-6 md:p-0
+                flex flex-col
+                justify-start
+                items-start
                 min-h-screen md:min-h-0
             ">
                 <div className='
@@ -65,9 +68,9 @@ export default function Food() {
                     top-3 sm:top-5
                     right-3 sm:right-5'
                 >
-                    <Homebutton color='text-amber-800 focus:ring-amber-800' />
+                    <Homebutton color='text-white focus:ring-white' />
                 </div>
-                <div className="pt-16 sm:pt-14 md:pt-12 lg:pt-16">
+                <div className="pt-0">
                     <MyFood />
                 </div>
             </div>
