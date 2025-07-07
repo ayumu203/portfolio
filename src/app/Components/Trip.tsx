@@ -71,7 +71,7 @@ export default function Trip() {
                 >
                     <Homebutton />
                 </div>
-                <div className="pt-12 sm:pt-10 md:pt-0">
+                <div className="pt-16 sm:pt-14 md:pt-12 lg:pt-16">
                     <MyTrip />
                 </div>
             </div>

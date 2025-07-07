@@ -67,7 +67,7 @@ export default function Food() {
                 >
                     <Homebutton color='text-amber-800 focus:ring-amber-800' />
                 </div>
-                <div className="pt-12 sm:pt-10 md:pt-0">
+                <div className="pt-16 sm:pt-14 md:pt-12 lg:pt-16">
                     <MyFood />
                 </div>
             </div>

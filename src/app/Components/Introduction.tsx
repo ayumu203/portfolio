@@ -38,9 +38,9 @@ export default function Introduction() {
                 </div>
 
                 <MyIntroduction className='
-                    pt-12 sm:pt-10 md:absolute md:top-10 md:left-5
-                    w-full md:w-auto
-                    px-0 md:px-0
+                    pt-16 sm:pt-14 md:pt-12 lg:pt-16
+                    w-full
+                    px-4 sm:px-6 md:px-8 lg:px-10
                 ' />
             </div>
         </div>

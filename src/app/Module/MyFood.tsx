@@ -15,13 +15,11 @@ export default function MyFood() {
         <div
             className={`
                     ${shippori_Mincho.className}
-                    w-full max-w-2xl
+                    w-full
                     text-stone-700
                     text-sm sm:text-base md:text-lg lg:text-xl
                     space-y-4
-                    absolute 
-                    top-10 
-                    left-5
+                    p-4 sm:p-6 md:p-8 lg:p-10
                 `}
         >
             <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 sm:mb-8 md:mb-10">食事</p>
